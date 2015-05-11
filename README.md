@@ -83,6 +83,22 @@ TX = [(FEDERATION : FEE+(1+<num_editions>)*DUST]
 > balance of editionX_address = DUST
 ```
 
+### Consigned Registration ###
+Register a single edition as a consignee. This allows marketplaces to register content on behalf of their users. 
+- Mapping: ```1-to-1 ```
+- PySPOOL: ```pyspool.ConsignedRegistration(FEDERATION, MARKET_content_address, hash)```
+- Bitcoin:
+```
+TX = [(FEDERATION : FEE+2*DUST] 
+     -> 
+     [(hash : DUST), 
+      (MARKET_content_address : DUST), 
+      (OP_RETURN=<META>CONSIGNEDREGISTER<marketplaceID><marketuserID> : 0), 
+      (FEE)]
+> balance of piece_hash = DUST
+> balance of MARKET_content_address = DUST
+```
+
 ### Migrate Content ###
 Associate two wallets, where the address does not represent hashed content. Usefull for password reset and other user/content updates.
 - Mapping: ```1-to-1 ```
