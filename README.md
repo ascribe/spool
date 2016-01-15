@@ -54,7 +54,7 @@ General association action (e.g. "change password") to attach content to a walle
 - PySPOOL: ```pyspool.Association(FEDERATION, address, hash, reason=<string>)```
 - Bitcoin:
 ```
-TX = [(FEDERATION : FEE+DUST] 
+TX = [(FEDERATION : FEE+2*DUST] 
      -> 
      [(hash : DUST), 
       (address : DUST), 
