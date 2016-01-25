@@ -100,7 +100,7 @@ TX = [(FEDERATION : FEE+2*DUST]
 ```
 
 ### Migrate Content ###
-Associate two wallets, where the address does not represent hashed content. Usefull for password reset and other user/content updates.
+Associate two wallets, where the address does not represent hashed content. Useful for password reset and other user/content updates.
 - Mapping: ```1-to-1 ```
 - PySPOOL: ```pyspool.Migration(FEDERATION, from_address, to_address, reason=<string>)```
 - Bitcoin:
