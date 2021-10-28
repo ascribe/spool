@@ -28,12 +28,11 @@ Useful for digital art, photography, and other media.
 
 ## Visual Description
 
-**[Here](https://s3-us-west-2.amazonaws.com/ascribe0/public/2015-05-07-copyright-on-the-blockchain--spool-protocol.pdf)** is a full slide-based description. It also shows this protocol's place in an overall software stack.
+**[Here](http://trent.st/content/2015-04-05-copyright-on-the-blockchain--spool-protocol.pdf)** is a full slide-based description. It also shows this protocol's place in an overall software stack.
 
 The key points are:
 
-![alt tag](https://s3-us-west-2.amazonaws.com/ascribe0/public/ascribe_spool_register_editions.png)
-![alt tag](https://s3-us-west-2.amazonaws.com/ascribe0/public/ascribe_spool_transfer.PNG)
+![alt tag](register-transfer.png)
 
 ## Protocol Description
 Summary: Via OP_RETURN we attach verbs to the blockchain tx, such as Register, Consign, Transfer, Loan, ....
